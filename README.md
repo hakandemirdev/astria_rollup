@@ -107,7 +107,7 @@ export SEQUENCER_PRIV_KEY=burayasequencerprivatekeyiyazıyoruz
 export SEQUENCER_ACCOUNT_ADDRESS=burayasequenceradresimiziyazıyoruz
 ```
 Faucetten token istiyoruz. Faucet' e sequencer adresimizi girmemiz gerekiyor.
-https://faucet.sequencer.dusk-2.devnet.astria.org)https://faucet.sequencer.dusk-2.devnet.astria.org
+https://faucet.sequencer.dusk-2.devnet.astria.org
 
 Token gelip gelmediğini kontrol ediyoruz.
 ```
