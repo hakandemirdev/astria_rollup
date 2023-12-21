@@ -126,3 +126,10 @@ kubectl get pods -n astria-dev-cluster –w
 ```
 Rollup ile etkileşime geçelim.
 ```
+export ETH_RPC_URL=http://executor.$ROLLUP_NAME.localdev.me/
+export REC_ADDR=tokengonderecegimizmetamaskadresigirelim
+cast send $REC_ADDR --value 10000000000000000000 --private-key $ROLLUP_FAUCET_PRIV_KEY
+```
+tokenların gönderilip gönderilmediğini kontrol edelim
+```
+cast balance $REC_ADDR
