@@ -73,6 +73,31 @@ echo "deb [arch=all,$(dpkg --print-architecture) signed-by=/usr/share/keyrings/p
 sudo apt update
 sudo apt install just
 ```
-Foundry Cast and Forge kurulumu
+Foundry Cast ve Forge kurulumu
 ```
 cargo install --git https://github.com/foundry-rs/foundry --profile local --locked forge cast chisel anvil
+```
+Yerel Ortamın Hazırlanması
+```
+cd dev-cluster
+just create-cluster
+just deploy-ingress-controller
+```
+Rollup Genesis Hesabı Oluşturuyoruz
+(Bu komuttan sonra adres ve private keyimizi not alıyoruz.)
+```
+cast w new
+export ROLLUP_FAUCET_PRIV_KEY=privatekeyimiziburayayazıyoruz.
+export ROLLUP_GENESIS_ACCOUNTS=genesisadresiburayayazıyoruz:100000000000000000000
+```
+Yapılandırmaları ayarlıyoruz
+(network id chainlist.org adresinde bulunmayan bir id olacak)
+```
+export ROLLUP_NAME=rollupismimiziburayayazıyoruz
+export ROLLUP_NETWORK_ID=networkidmiziburayayazıyoruz
+astria-cli rollup config create
+export ROLLUP_CONF_FILE=$ROLLUP_NAME-rollup-conf.yaml
+cat $ROLLUP_CONF_FILE
+```
+astria-cli sequencer hesabı oluşturma
+```
