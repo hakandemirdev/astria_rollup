@@ -125,7 +125,7 @@ Rollup'ımızın çaılıp çalışmadığını kontrol ediyoruz.
 kubectl get pods -n astria-dev-cluster –w
 ```
 <img src="https://github.com/hakandemirdev/astria_rollup/blob/main/kontrol.PNG" width="auto">
-```
+
 Rollup ile etkileşime geçelim.
 ```
 export ETH_RPC_URL=http://executor.$ROLLUP_NAME.localdev.me/
