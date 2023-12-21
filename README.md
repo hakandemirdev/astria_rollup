@@ -1,4 +1,5 @@
 # astria_rollup
+<img src="https://github.com/hakandemirdev/astria_rollup/blob/main/astrialogo.PNG" width="auto">
 
 Öncelikle işletim sistemimizi güncelliyoruz.
 ```
