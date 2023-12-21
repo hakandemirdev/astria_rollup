@@ -122,7 +122,8 @@ astria-cli rollup deployment create \
 ```
 Rollup'ımızın çaılıp çalışmadığını kontrol ediyoruz.
 ```
-kubectl get pods -n astria-dev-cluster –w    
+kubectl get pods -n astria-dev-cluster –w
+https://github.com/hakandemirdev/astria_rollup/blob/main/kontrol.PNG
 ```
 Rollup ile etkileşime geçelim.
 ```
