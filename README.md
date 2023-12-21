@@ -1,7 +1,7 @@
 # astria_rollup
 <img src="https://github.com/hakandemirdev/astria_rollup/blob/main/astrialogo.PNG" width="auto">
 
-Öncelikle işletim sistemimizi güncelliyoruz.
+Öncelikle işletim sistemimizi güncelliyoruz.Ubuntu 22.04.3 LTS üzerine kurdum.
 ```
 sudo apt-get update  && sudo apt-get upgrade
 ```
