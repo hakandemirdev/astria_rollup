@@ -106,6 +106,23 @@ astria-cli sequencer account create
 export SEQUENCER_PRIV_KEY=burayasequencerprivatekeyiyazıyoruz
 export SEQUENCER_ACCOUNT_ADDRESS=burayasequenceradresimiziyazıyoruz
 ```
-Faucetten token istiyoruz.
+Faucetten token istiyoruz. Faucet' e sequencer adresimizi girmemiz gerekiyor.
 https://faucet.sequencer.dusk-2.devnet.astria.org)https://faucet.sequencer.dusk-2.devnet.astria.org
+```
+Token gelip gelmediğini kontrol ediyoruz.
+```
+astria-cli sequencer account balance $SEQUENCER_ACCOUNT_ADDRESS
+```
+Rollup Node deploy ediyoruz.
+```
+astria-cli rollup deployment create \
+  --config $ROLLUP_CONF_FILE \
+  --faucet-private-key $ROLLUP_FAUCET_PRIV_KEY \
+  --sequencer-private-key $SEQUENCER_PRIV_KEY
+```
+Rollup'ımızın çaılıp çalışmadığını kontrol ediyoruz.
+```
+kubectl get pods -n astria-dev-cluster –w    
+```
+Rollup ile etkileşime geçelim.
 ```
