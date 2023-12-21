@@ -99,5 +99,13 @@ astria-cli rollup config create
 export ROLLUP_CONF_FILE=$ROLLUP_NAME-rollup-conf.yaml
 cat $ROLLUP_CONF_FILE
 ```
-astria-cli sequencer hesabı oluşturma
+Yeni Bir Sequencer Hesabı Oluşturalım
+(Bu komut ile private key, public key ve adresimiz yaratılacak, bunları not alıyoruz)
+```
+astria-cli sequencer account create
+export SEQUENCER_PRIV_KEY=burayasequencerprivatekeyiyazıyoruz
+export SEQUENCER_ACCOUNT_ADDRESS=burayasequenceradresimiziyazıyoruz
+```
+Faucetten token istiyoruz.
+https://faucet.sequencer.dusk-2.devnet.astria.org)https://faucet.sequencer.dusk-2.devnet.astria.org
 ```
