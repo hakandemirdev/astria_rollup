@@ -1,4 +1,12 @@
 # astria_rollup
-astria rollup
-Update Your System
-apt update && apt upgrade
+
+Öncelikle işletim sistemimizi güncelliyoruz.
+```
+sudo apt-get update  && sudo apt-get upgrade
+```
+Daha sonra işletim sistemize screen kuruyoruz.
+```
+apt install screen
+```
+Bir screen oluşturuyoruz.
+```
