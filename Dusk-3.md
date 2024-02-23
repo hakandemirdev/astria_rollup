@@ -79,6 +79,8 @@ cargo install --git https://github.com/foundry-rs/foundry --profile local --lock
 ```
 Yerel Ortamın Hazırlanması
 ```
+apt install screen
+screen -S rollup
 cd dev-cluster
 just create-cluster
 just deploy-ingress-controller
